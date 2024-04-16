@@ -1,4 +1,5 @@
 # terminal-meditation
+![image](https://github.com/Andrew-Pynch/terminal-meditation/assets/43330642/4242114f-01a3-4a70-8278-d52a3b03a01d)
 
 focus shri yantra meditation triggered from your terminal. runs in opengl
 

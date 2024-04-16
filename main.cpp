@@ -5,10 +5,13 @@
 #include "stb_image.h"
 #include <sstream>
 #include <iomanip>
+#include <libgen.h>
+#include <unistd.h>
 
 const int WINDOW_WIDTH = 800;
 const int WINDOW_HEIGHT = 600;
-const char* IMAGE_FILE = "Sri_Yantra_Correct_Colors_Johari_1974.jpg";
+// there is a better way to encode where we expect the image to be, but im bad at c++ ¯\_(ツ)_/¯
+const char* IMAGE_FILE = "/usr/local/bin/Sri_Yantra_Correct_Colors_Johari_1974.jpg";
 int remainingTime = 90;
 
 unsigned char* loadImage(const char* filename, int& width, int& height) {
@@ -82,6 +85,11 @@ void timer(int value) {
 }
 
 int main(int argc, char** argv) {
+    // Change the working directory to the directory of the executable
+    char* execPath = strdup(argv[0]);
+    chdir(dirname(execPath));
+    free(execPath);
+
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
     glutInitWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT);

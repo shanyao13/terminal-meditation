@@ -1,9 +1,11 @@
 # terminal-meditation
 ![image](https://github.com/Andrew-Pynch/terminal-meditation/assets/43330642/4242114f-01a3-4a70-8278-d52a3b03a01d)
+## Guided Trataka Explained: W/Doctor K
 
-Focus shri yantra meditation triggered from your terminal. Runs in Opengl
 
-includes 90 second timer
+Focus Trataka meditation triggered from your terminal. Runs in Opengl
+
+Includes 90 second timer, will automatically close once timer expires
 
 # usage
 

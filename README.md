@@ -1,11 +1,13 @@
 # terminal-meditation
+Focus Trataka meditation triggered from your terminal. Runs in Opengl
+
+Includes 90-second timer, which will automatically close the program once the timer expires (will add ability to specify length of meditation session from cli when I have time to update this again)
+
+
 ![image](https://github.com/Andrew-Pynch/terminal-meditation/assets/43330642/4242114f-01a3-4a70-8278-d52a3b03a01d)
 ## Trataka Explained + [Guided Trataka with Doctor K](https://www.youtube.com/watch?v=snt1i5_1uhY)
 Trataka as I understand it (I am quite new to the practice) is a form of meditation aimed towards enhancing the practitioners abilities of focus. Terminal-meditation has become an extremely useful tool for my personal use right before beginning a bout of focused work. 
 
-Focus Trataka meditation triggered from your terminal. Runs in Opengl
-
-Includes 90-second timer, which will automatically close the program once the timer expires (will add ability to specify length of meditation session from cli when I have time to update this again)
 
 # usage
 

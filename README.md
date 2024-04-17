@@ -1,6 +1,6 @@
 # terminal-meditation
 ![image](https://github.com/Andrew-Pynch/terminal-meditation/assets/43330642/4242114f-01a3-4a70-8278-d52a3b03a01d)
-## Guided Trataka Explained: W/Doctor K
+## [Guided Trataka Explained: W/Doctor K](https://www.youtube.com/watch?v=snt1i5_1uhY)
 
 
 Focus Trataka meditation triggered from your terminal. Runs in Opengl

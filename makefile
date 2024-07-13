@@ -1,17 +1,18 @@
 CC = g++
 CFLAGS = -Wall -Wextra -std=c++11
-LDFLAGS = -lGL -lGLEW -lglut
+LDFLAGS = -static-libstdc++
+LIBS = -L/usr/local/opt/mesa/lib -lGL -L/usr/local/opt/glew/lib -lGLEW -L/usr/local/opt/freeglut/lib -lglut
 
 SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
-EXEC = image_viewer
+EXEC = image_viewer_static
 
 .PHONY: all clean run test watch
 
 all: $(EXEC)
 
 $(EXEC): $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o $@ $(LDFLAGS)
+	$(CC) $(CFLAGS) $(OBJS) -o $@ $(LIBS) $(LDFLAGS)
 
 %.o: %.cpp
 	$(CC) $(CFLAGS) -c $< -o $@
@@ -30,3 +31,4 @@ watch:
 		make test; \
 		inotifywait -qre modify $(SRCS); \
 	done
+

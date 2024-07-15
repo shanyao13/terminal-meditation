@@ -1,11 +1,12 @@
 CC = g++
 CFLAGS = -Wall -Wextra -std=c++11
-LDFLAGS = -static-libstdc++
-LIBS = -L/usr/local/opt/mesa/lib -lGL -L/usr/local/opt/glew/lib -lGLEW -L/usr/local/opt/freeglut/lib -lglut
+# LDFLAGS = -static-libstdc++
+# LIBS = -L/usr/local/opt/mesa/lib -lGL -L/usr/local/opt/glew/lib -lGLEW -L/usr/local/opt/freeglut/lib -lglut
+LIBS = -lGL -lGLEW -lglut
 
 SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
-EXEC = image_viewer_static
+EXEC = image_viewer
 
 .PHONY: all clean run test watch
 
